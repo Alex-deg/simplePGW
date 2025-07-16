@@ -12,12 +12,11 @@ public:
 
 protected:
     void forward_packet_to_sgw(boost::asio::ip::address_v4 sgw_addr, uint32_t sgw_dp_teid, Packet &&packet) override {
-        _forwarded_to_sgw[sgw_addr][sgw_dp_teid].emplace_back(std::move(packet));
+        _forwarded_to_sgw[sgw_addr][sgw_dp_teid].push_back(std::move(packet));
     }
 
     void forward_packet_to_apn(boost::asio::ip::address_v4 apn_gateway, Packet &&packet) override {
-        //_forwarded_to_apn[apn_gateway].push_back(std::move(packet));
-        _forwarded_to_apn[apn_gateway].push_back(packet);
+        _forwarded_to_apn[apn_gateway].push_back(std::move(packet));
     }
 };
 
@@ -47,6 +46,7 @@ public:
 };
 
 TEST_F(data_plane_test, handle_downlink_for_pdn) {
+
     data_plane::Packet packet1{1, 2, 3};
     _data_plane.handle_uplink(_pdn->get_default_bearer()->get_dp_teid(), {packet1.begin(), packet1.end()});
 
@@ -57,11 +57,15 @@ TEST_F(data_plane_test, handle_downlink_for_pdn) {
     _data_plane.handle_downlink(_pdn->get_ue_ip_addr(), {packet3.begin(), packet3.end()});
 
     ASSERT_EQ(1, _data_plane._forwarded_to_sgw.size());
+
     ASSERT_EQ(packet3, _data_plane._forwarded_to_sgw[sgw_addr][sgw_default_bearer_teid][0]);
 
     ASSERT_EQ(1, _data_plane._forwarded_to_apn.size());
+
     ASSERT_EQ(2, _data_plane._forwarded_to_apn[apn_gw].size());
+
     ASSERT_EQ(packet1, _data_plane._forwarded_to_apn[apn_gw][0]);
+
     ASSERT_EQ(packet2, _data_plane._forwarded_to_apn[apn_gw][1]);
 }
 

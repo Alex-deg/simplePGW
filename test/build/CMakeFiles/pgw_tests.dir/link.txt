@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/pgw_tests.dir/data_plane_test.o -o pgw_tests  -lpgw_lib /usr/lib/x86_64-linux-gnu/libgtest_main.a /usr/lib/x86_64-linux-gnu/libgtest.a -lThreads::Threads 

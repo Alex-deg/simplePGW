@@ -65,6 +65,16 @@ CMAKE_BINARY_DIR = "/home/alex/Протей/ДЗ №7 PGW/PGW/build"
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
@@ -126,7 +136,7 @@ pgw_lib: cmake_check_build_system
 
 # fast build rule for target.
 pgw_lib/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/pgw_lib.dir/build.make src/CMakeFiles/pgw_lib.dir/build
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_lib.dir/build.make CMakeFiles/pgw_lib.dir/build
 .PHONY : pgw_lib/fast
 
 #=============================================================================
@@ -139,7 +149,7 @@ pgw_main: cmake_check_build_system
 
 # fast build rule for target.
 pgw_main/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/pgw_main.dir/build.make src/CMakeFiles/pgw_main.dir/build
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_main.dir/build.make CMakeFiles/pgw_main.dir/build
 .PHONY : pgw_main/fast
 
 #=============================================================================
@@ -152,8 +162,164 @@ pgw_tests: cmake_check_build_system
 
 # fast build rule for target.
 pgw_tests/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/pgw_tests.dir/build.make test/CMakeFiles/pgw_tests.dir/build
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_tests.dir/build.make CMakeFiles/pgw_tests.dir/build
 .PHONY : pgw_tests/fast
+
+src/bearer.o: src/bearer.cpp.o
+.PHONY : src/bearer.o
+
+# target to build an object file
+src/bearer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_lib.dir/build.make CMakeFiles/pgw_lib.dir/src/bearer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_tests.dir/build.make CMakeFiles/pgw_tests.dir/src/bearer.cpp.o
+.PHONY : src/bearer.cpp.o
+
+src/bearer.i: src/bearer.cpp.i
+.PHONY : src/bearer.i
+
+# target to preprocess a source file
+src/bearer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_lib.dir/build.make CMakeFiles/pgw_lib.dir/src/bearer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_tests.dir/build.make CMakeFiles/pgw_tests.dir/src/bearer.cpp.i
+.PHONY : src/bearer.cpp.i
+
+src/bearer.s: src/bearer.cpp.s
+.PHONY : src/bearer.s
+
+# target to generate assembly for a file
+src/bearer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_lib.dir/build.make CMakeFiles/pgw_lib.dir/src/bearer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_tests.dir/build.make CMakeFiles/pgw_tests.dir/src/bearer.cpp.s
+.PHONY : src/bearer.cpp.s
+
+src/control_plane.o: src/control_plane.cpp.o
+.PHONY : src/control_plane.o
+
+# target to build an object file
+src/control_plane.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_lib.dir/build.make CMakeFiles/pgw_lib.dir/src/control_plane.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_tests.dir/build.make CMakeFiles/pgw_tests.dir/src/control_plane.cpp.o
+.PHONY : src/control_plane.cpp.o
+
+src/control_plane.i: src/control_plane.cpp.i
+.PHONY : src/control_plane.i
+
+# target to preprocess a source file
+src/control_plane.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_lib.dir/build.make CMakeFiles/pgw_lib.dir/src/control_plane.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_tests.dir/build.make CMakeFiles/pgw_tests.dir/src/control_plane.cpp.i
+.PHONY : src/control_plane.cpp.i
+
+src/control_plane.s: src/control_plane.cpp.s
+.PHONY : src/control_plane.s
+
+# target to generate assembly for a file
+src/control_plane.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_lib.dir/build.make CMakeFiles/pgw_lib.dir/src/control_plane.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_tests.dir/build.make CMakeFiles/pgw_tests.dir/src/control_plane.cpp.s
+.PHONY : src/control_plane.cpp.s
+
+src/data_plane.o: src/data_plane.cpp.o
+.PHONY : src/data_plane.o
+
+# target to build an object file
+src/data_plane.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_lib.dir/build.make CMakeFiles/pgw_lib.dir/src/data_plane.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_tests.dir/build.make CMakeFiles/pgw_tests.dir/src/data_plane.cpp.o
+.PHONY : src/data_plane.cpp.o
+
+src/data_plane.i: src/data_plane.cpp.i
+.PHONY : src/data_plane.i
+
+# target to preprocess a source file
+src/data_plane.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_lib.dir/build.make CMakeFiles/pgw_lib.dir/src/data_plane.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_tests.dir/build.make CMakeFiles/pgw_tests.dir/src/data_plane.cpp.i
+.PHONY : src/data_plane.cpp.i
+
+src/data_plane.s: src/data_plane.cpp.s
+.PHONY : src/data_plane.s
+
+# target to generate assembly for a file
+src/data_plane.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_lib.dir/build.make CMakeFiles/pgw_lib.dir/src/data_plane.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_tests.dir/build.make CMakeFiles/pgw_tests.dir/src/data_plane.cpp.s
+.PHONY : src/data_plane.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_main.dir/build.make CMakeFiles/pgw_main.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_main.dir/build.make CMakeFiles/pgw_main.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_main.dir/build.make CMakeFiles/pgw_main.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
+src/pdn_connection.o: src/pdn_connection.cpp.o
+.PHONY : src/pdn_connection.o
+
+# target to build an object file
+src/pdn_connection.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_lib.dir/build.make CMakeFiles/pgw_lib.dir/src/pdn_connection.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_tests.dir/build.make CMakeFiles/pgw_tests.dir/src/pdn_connection.cpp.o
+.PHONY : src/pdn_connection.cpp.o
+
+src/pdn_connection.i: src/pdn_connection.cpp.i
+.PHONY : src/pdn_connection.i
+
+# target to preprocess a source file
+src/pdn_connection.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_lib.dir/build.make CMakeFiles/pgw_lib.dir/src/pdn_connection.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_tests.dir/build.make CMakeFiles/pgw_tests.dir/src/pdn_connection.cpp.i
+.PHONY : src/pdn_connection.cpp.i
+
+src/pdn_connection.s: src/pdn_connection.cpp.s
+.PHONY : src/pdn_connection.s
+
+# target to generate assembly for a file
+src/pdn_connection.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_lib.dir/build.make CMakeFiles/pgw_lib.dir/src/pdn_connection.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_tests.dir/build.make CMakeFiles/pgw_tests.dir/src/pdn_connection.cpp.s
+.PHONY : src/pdn_connection.cpp.s
+
+test/data_plane_test.o: test/data_plane_test.cpp.o
+.PHONY : test/data_plane_test.o
+
+# target to build an object file
+test/data_plane_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_tests.dir/build.make CMakeFiles/pgw_tests.dir/test/data_plane_test.cpp.o
+.PHONY : test/data_plane_test.cpp.o
+
+test/data_plane_test.i: test/data_plane_test.cpp.i
+.PHONY : test/data_plane_test.i
+
+# target to preprocess a source file
+test/data_plane_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_tests.dir/build.make CMakeFiles/pgw_tests.dir/test/data_plane_test.cpp.i
+.PHONY : test/data_plane_test.cpp.i
+
+test/data_plane_test.s: test/data_plane_test.cpp.s
+.PHONY : test/data_plane_test.s
+
+# target to generate assembly for a file
+test/data_plane_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_tests.dir/build.make CMakeFiles/pgw_tests.dir/test/data_plane_test.cpp.s
+.PHONY : test/data_plane_test.cpp.s
 
 # Help Target
 help:
@@ -163,9 +329,28 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... pgw_lib"
 	@echo "... pgw_main"
 	@echo "... pgw_tests"
+	@echo "... src/bearer.o"
+	@echo "... src/bearer.i"
+	@echo "... src/bearer.s"
+	@echo "... src/control_plane.o"
+	@echo "... src/control_plane.i"
+	@echo "... src/control_plane.s"
+	@echo "... src/data_plane.o"
+	@echo "... src/data_plane.i"
+	@echo "... src/data_plane.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
+	@echo "... src/pdn_connection.o"
+	@echo "... src/pdn_connection.i"
+	@echo "... src/pdn_connection.s"
+	@echo "... test/data_plane_test.o"
+	@echo "... test/data_plane_test.i"
+	@echo "... test/data_plane_test.s"
 .PHONY : help
 
 

@@ -32,6 +32,9 @@ Boost_INCLUDE_DIR:PATH=/usr/include
 Boost_SYSTEM_LIBRARY_RELEASE:STRING=/usr/lib/x86_64-linux-gnu/libboost_system.so.1.83.0
 
 //Path to a program.
+CLANG_FORMAT:FILEPATH=CLANG_FORMAT-NOTFOUND
+
+//Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
 //Path to a program.
@@ -213,7 +216,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=PGW
+CMAKE_PROJECT_NAME:STATIC=pgw
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=
@@ -410,6 +413,15 @@ gtest_force_shared_crt:BOOL=ON
 gtest_hide_internal_symbols:BOOL=OFF
 
 //Value Computed by CMake
+pgw_BINARY_DIR:STATIC=/home/alex/Протей/ДЗ №7 PGW/PGW/build
+
+//Value Computed by CMake
+pgw_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+pgw_SOURCE_DIR:STATIC=/home/alex/Протей/ДЗ №7 PGW/PGW
+
+//Value Computed by CMake
 simple_pgw_BINARY_DIR:STATIC=/home/alex/Протей/ДЗ №7 PGW/PGW/build
 
 //Value Computed by CMake
@@ -565,7 +577,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

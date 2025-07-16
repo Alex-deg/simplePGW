@@ -5,8 +5,6 @@
 #include <memory>
 #include <unordered_map>
 
-#include <iostream>
-
 class control_plane;
 
 class pdn_connection : public std::enable_shared_from_this<pdn_connection> {

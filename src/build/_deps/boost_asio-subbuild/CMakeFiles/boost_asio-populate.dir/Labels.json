@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/alex/\u041f\u0440\u043e\u0442\u0435\u0439/\u0414\u0417 \u21167 PGW/PGW/src/build/_deps/boost_asio-subbuild/CMakeFiles/boost_asio-populate"
+		},
+		{
+			"file" : "/home/alex/\u041f\u0440\u043e\u0442\u0435\u0439/\u0414\u0417 \u21167 PGW/PGW/src/build/_deps/boost_asio-subbuild/CMakeFiles/boost_asio-populate.rule"
+		},
+		{
+			"file" : "/home/alex/\u041f\u0440\u043e\u0442\u0435\u0439/\u0414\u0417 \u21167 PGW/PGW/src/build/_deps/boost_asio-subbuild/CMakeFiles/boost_asio-populate-complete.rule"
+		},
+		{
+			"file" : "/home/alex/\u041f\u0440\u043e\u0442\u0435\u0439/\u0414\u0417 \u21167 PGW/PGW/src/build/_deps/boost_asio-subbuild/boost_asio-populate-prefix/src/boost_asio-populate-stamp/boost_asio-populate-build.rule"
+		},
+		{
+			"file" : "/home/alex/\u041f\u0440\u043e\u0442\u0435\u0439/\u0414\u0417 \u21167 PGW/PGW/src/build/_deps/boost_asio-subbuild/boost_asio-populate-prefix/src/boost_asio-populate-stamp/boost_asio-populate-configure.rule"
+		},
+		{
+			"file" : "/home/alex/\u041f\u0440\u043e\u0442\u0435\u0439/\u0414\u0417 \u21167 PGW/PGW/src/build/_deps/boost_asio-subbuild/boost_asio-populate-prefix/src/boost_asio-populate-stamp/boost_asio-populate-download.rule"
+		},
+		{
+			"file" : "/home/alex/\u041f\u0440\u043e\u0442\u0435\u0439/\u0414\u0417 \u21167 PGW/PGW/src/build/_deps/boost_asio-subbuild/boost_asio-populate-prefix/src/boost_asio-populate-stamp/boost_asio-populate-install.rule"
+		},
+		{
+			"file" : "/home/alex/\u041f\u0440\u043e\u0442\u0435\u0439/\u0414\u0417 \u21167 PGW/PGW/src/build/_deps/boost_asio-subbuild/boost_asio-populate-prefix/src/boost_asio-populate-stamp/boost_asio-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/alex/\u041f\u0440\u043e\u0442\u0435\u0439/\u0414\u0417 \u21167 PGW/PGW/src/build/_deps/boost_asio-subbuild/boost_asio-populate-prefix/src/boost_asio-populate-stamp/boost_asio-populate-patch.rule"
+		},
+		{
+			"file" : "/home/alex/\u041f\u0440\u043e\u0442\u0435\u0439/\u0414\u0417 \u21167 PGW/PGW/src/build/_deps/boost_asio-subbuild/boost_asio-populate-prefix/src/boost_asio-populate-stamp/boost_asio-populate-test.rule"
+		},
+		{
+			"file" : "/home/alex/\u041f\u0440\u043e\u0442\u0435\u0439/\u0414\u0417 \u21167 PGW/PGW/src/build/_deps/boost_asio-subbuild/boost_asio-populate-prefix/src/boost_asio-populate-stamp/boost_asio-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"boost_asio-populate"
+		],
+		"name" : "boost_asio-populate"
+	}
+}

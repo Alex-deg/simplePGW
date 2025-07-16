@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/pgw_main.dir/src/main.cpp.o -o pgw_main  libpgw_lib.a 

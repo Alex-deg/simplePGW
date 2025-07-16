@@ -8,10 +8,9 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "/home/alex/Протей/ДЗ №7 PGW/PGW/CMakeLists.txt"
+  "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeSystem.cmake"
-  "/home/alex/Протей/ДЗ №7 PGW/PGW/src/CMakeLists.txt"
-  "/home/alex/Протей/ДЗ №7 PGW/PGW/test/CMakeLists.txt"
   "/usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfigVersion.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/BoostDetectToolset-1.83.0.cmake"
@@ -27,6 +26,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/lib/x86_64-linux-gnu/cmake/boost_system-1.83.0/boost_system-config.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/boost_system-1.83.0/libboost_system-variant-shared.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/boost_system-1.83.0/libboost_system-variant-static.cmake"
+  "/usr/share/cmake-3.28/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake"
@@ -35,10 +35,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake"
-  "/usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake"
-  "/usr/share/cmake-3.28/Modules/CheckIncludeFileCXX.cmake"
+  "/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake"
+  "/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake"
   "/usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake"
   "/usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+  "/usr/share/cmake-3.28/Modules/Compiler/GNU-C.cmake"
   "/usr/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake"
   "/usr/share/cmake-3.28/Modules/Compiler/GNU.cmake"
   "/usr/share/cmake-3.28/Modules/FindBoost.cmake"
@@ -48,6 +49,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.28/Modules/FindThreads.cmake"
   "/usr/share/cmake-3.28/Modules/GoogleTest.cmake"
   "/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake"
+  "/usr/share/cmake-3.28/Modules/Platform/Linux-GNU-C.cmake"
   "/usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake"
   "/usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake"
   "/usr/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake"
@@ -64,13 +66,11 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "src/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "src/CMakeFiles/pgw_lib.dir/DependInfo.cmake"
-  "src/CMakeFiles/pgw_main.dir/DependInfo.cmake"
-  "test/CMakeFiles/pgw_tests.dir/DependInfo.cmake"
+  "CMakeFiles/pgw_lib.dir/DependInfo.cmake"
+  "CMakeFiles/pgw_main.dir/DependInfo.cmake"
+  "CMakeFiles/pgw_tests.dir/DependInfo.cmake"
   )

@@ -342,6 +342,4 @@ src/CMakeFiles/pgw_lib.dir/pdn_connection.cpp.o: \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
  /usr/include/boost/asio/detail/impl/socket_ops.ipp \
- /usr/include/boost/asio/detail/assert.hpp /usr/include/boost/assert.hpp \
- /usr/include/c++/13/iostream /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc
+ /usr/include/boost/asio/detail/assert.hpp /usr/include/boost/assert.hpp

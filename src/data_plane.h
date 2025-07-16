@@ -6,7 +6,6 @@
 
 #include <cstdint>
 #include <vector>
-
 #include <iostream>
 
 class data_plane {

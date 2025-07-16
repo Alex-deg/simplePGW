@@ -1,0 +1,6 @@
+/home/alex/Протей/ДЗ №7 PGW/PGW/src/build/CMakeFiles/Project_lib.dir
+/home/alex/Протей/ДЗ №7 PGW/PGW/src/build/CMakeFiles/Project.dir
+/home/alex/Протей/ДЗ №7 PGW/PGW/src/build/CMakeFiles/edit_cache.dir
+/home/alex/Протей/ДЗ №7 PGW/PGW/src/build/CMakeFiles/rebuild_cache.dir
+/home/alex/Протей/ДЗ №7 PGW/PGW/src/build/_deps/boost_asio-build/CMakeFiles/edit_cache.dir
+/home/alex/Протей/ДЗ №7 PGW/PGW/src/build/_deps/boost_asio-build/CMakeFiles/rebuild_cache.dir

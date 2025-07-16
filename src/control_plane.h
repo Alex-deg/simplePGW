@@ -5,6 +5,7 @@
 #include <boost/asio/ip/address.hpp>
 
 #include <memory>
+#include <iostream>
 
 class control_plane {
 public:

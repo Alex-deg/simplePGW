@@ -1,16 +1,30 @@
-# Включаем поддержку тестов (если используем Google Test или Catch2)
+cmake_minimum_required(VERSION 3.12)
+
 enable_testing()
 
-# Пример для Google Test
-find_package(GTest REQUIRED)
+include(FetchContent)
 
-# Собираем тестовый модуль
-add_executable(pgw_tests
-    data_plane_test.cpp
+FetchContent_Declare(
+        googletest
+        GIT_REPOSITORY https://github.com/google/googletest.git
+        GIT_TAG v1.17.0
 )
 
-# Линкуем тесты с основной библиотекой и GTest
-target_link_libraries(pgw_tests PRIVATE pgw_lib GTest::GTest GTest::Main)
+set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
+option(INSTALL_GMOCK "Install GMock" OFF)
+option(INSTALL_GTEST "Install GTest" OFF)
 
-# Добавляем тест в CTest
-add_test(NAME pgw_tests COMMAND pgw_tests)
+FetchContent_MakeAvailable(googletest)
+
+include(GoogleTest)
+
+set(TEST "${CMAKE_PROJECT_NAME}_tests")
+set(OBJ_LIB "${CMAKE_PROJECT_NAME}_lib")
+file(GLOB_RECURSE TEST_SOURCES CONFIGURE_DEPENDS
+        "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp"
+        "${CMAKE_CURRENT_SOURCE_DIR}/*.h"
+)
+add_executable(${TEST} ${TEST_SOURCES})
+target_include_directories(${TEST} PRIVATE "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>")
+target_link_libraries(${TEST} PRIVATE ${OBJ_LIB} gtest_main gmock)
+gtest_discover_tests(${TEST})

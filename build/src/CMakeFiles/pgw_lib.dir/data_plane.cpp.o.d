@@ -345,8 +345,6 @@ src/CMakeFiles/pgw_lib.dir/data_plane.cpp.o: \
  /usr/include/c++/13/pstl/execution_defs.h \
  /usr/include/boost/asio/detail/impl/socket_ops.ipp \
  /usr/include/boost/asio/detail/assert.hpp /usr/include/boost/assert.hpp \
- /usr/include/c++/13/iostream /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc \
  /usr/include/boost/asio/ip/address.hpp \
  /usr/include/boost/asio/detail/type_traits.hpp \
  /usr/include/boost/asio/ip/address_v6.hpp \
