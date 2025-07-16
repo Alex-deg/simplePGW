@@ -7,7 +7,15 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${file}",
+                "src/bearer.cpp",
+                "src/control_plane.cpp",
+                "src/data_plane.cpp",
+                "src/main.cpp",
+                "src/pdn_connection.cpp",
+                "test/data_plane_test.cpp",
+                "-lboost_system",
+                "-I/usr/include/boost",
+                "-L/usr/lib/x86_64-linux-gnu",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],

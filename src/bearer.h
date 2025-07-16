@@ -13,7 +13,7 @@ public:
 
     [[nodiscard]] uint32_t get_dp_teid() const;
 
-    [[nodiscard]] std::shared_ptr<pdn_connection> get_pdn_connection() const;
+    [[nodiscard]] pdn_connection get_pdn_connection() const;
 
 private:
     uint32_t _sgw_dp_teid{};

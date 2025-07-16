@@ -1,0 +1,17 @@
+/home/alex/Протей/ДЗ №7 PGW/PGW/test/build/CMakeFiles/Project_tests.dir
+/home/alex/Протей/ДЗ №7 PGW/PGW/test/build/CMakeFiles/test.dir
+/home/alex/Протей/ДЗ №7 PGW/PGW/test/build/CMakeFiles/edit_cache.dir
+/home/alex/Протей/ДЗ №7 PGW/PGW/test/build/CMakeFiles/rebuild_cache.dir
+/home/alex/Протей/ДЗ №7 PGW/PGW/test/build/_deps/googletest-build/CMakeFiles/test.dir
+/home/alex/Протей/ДЗ №7 PGW/PGW/test/build/_deps/googletest-build/CMakeFiles/edit_cache.dir
+/home/alex/Протей/ДЗ №7 PGW/PGW/test/build/_deps/googletest-build/CMakeFiles/rebuild_cache.dir
+/home/alex/Протей/ДЗ №7 PGW/PGW/test/build/_deps/googletest-build/googlemock/CMakeFiles/gmock.dir
+/home/alex/Протей/ДЗ №7 PGW/PGW/test/build/_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir
+/home/alex/Протей/ДЗ №7 PGW/PGW/test/build/_deps/googletest-build/googlemock/CMakeFiles/test.dir
+/home/alex/Протей/ДЗ №7 PGW/PGW/test/build/_deps/googletest-build/googlemock/CMakeFiles/edit_cache.dir
+/home/alex/Протей/ДЗ №7 PGW/PGW/test/build/_deps/googletest-build/googlemock/CMakeFiles/rebuild_cache.dir
+/home/alex/Протей/ДЗ №7 PGW/PGW/test/build/_deps/googletest-build/googletest/CMakeFiles/gtest.dir
+/home/alex/Протей/ДЗ №7 PGW/PGW/test/build/_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir
+/home/alex/Протей/ДЗ №7 PGW/PGW/test/build/_deps/googletest-build/googletest/CMakeFiles/test.dir
+/home/alex/Протей/ДЗ №7 PGW/PGW/test/build/_deps/googletest-build/googletest/CMakeFiles/edit_cache.dir
+/home/alex/Протей/ДЗ №7 PGW/PGW/test/build/_deps/googletest-build/googletest/CMakeFiles/rebuild_cache.dir
