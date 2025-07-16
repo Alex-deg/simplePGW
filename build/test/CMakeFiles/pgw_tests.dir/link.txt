@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/pgw_tests.dir/data_plane_test.cpp.o -o pgw_tests  ../src/libpgw_lib.a /usr/lib/x86_64-linux-gnu/libgtest_main.a /usr/lib/x86_64-linux-gnu/libgtest.a 
