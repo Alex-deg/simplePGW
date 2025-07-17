@@ -1,5 +1,0 @@
-if(EXISTS "/home/alex/Протей/ДЗ №7 PGW/PGW/test/build/Project_tests[1]_tests.cmake")
-  include("/home/alex/Протей/ДЗ №7 PGW/PGW/test/build/Project_tests[1]_tests.cmake")
-else()
-  add_test(Project_tests_NOT_BUILT Project_tests_NOT_BUILT)
-endif()

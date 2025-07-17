@@ -1,6 +1,0 @@
-/home/alex/Протей/ДЗ №7 PGW/PGW/build/CMakeFiles/pgw_lib.dir
-/home/alex/Протей/ДЗ №7 PGW/PGW/build/CMakeFiles/pgw_main.dir
-/home/alex/Протей/ДЗ №7 PGW/PGW/build/CMakeFiles/pgw_tests.dir
-/home/alex/Протей/ДЗ №7 PGW/PGW/build/CMakeFiles/test.dir
-/home/alex/Протей/ДЗ №7 PGW/PGW/build/CMakeFiles/edit_cache.dir
-/home/alex/Протей/ДЗ №7 PGW/PGW/build/CMakeFiles/rebuild_cache.dir

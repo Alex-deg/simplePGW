@@ -1,2 +1,0 @@
-/usr/bin/ar qc libpgw_lib.a CMakeFiles/pgw_lib.dir/bearer.cpp.o CMakeFiles/pgw_lib.dir/control_plane.cpp.o CMakeFiles/pgw_lib.dir/data_plane.cpp.o CMakeFiles/pgw_lib.dir/pdn_connection.cpp.o
-/usr/bin/ranlib libpgw_lib.a
