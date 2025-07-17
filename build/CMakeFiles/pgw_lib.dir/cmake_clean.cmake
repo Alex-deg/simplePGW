@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/pgw_lib.dir/src/data_plane.cpp.o.d"
   "CMakeFiles/pgw_lib.dir/src/pdn_connection.cpp.o"
   "CMakeFiles/pgw_lib.dir/src/pdn_connection.cpp.o.d"
+  "CMakeFiles/pgw_lib.dir/src/rate_limiter.cpp.o"
+  "CMakeFiles/pgw_lib.dir/src/rate_limiter.cpp.o.d"
   "libpgw_lib.a"
   "libpgw_lib.pdb"
 )

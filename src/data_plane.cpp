@@ -55,6 +55,11 @@ data_plane::data_plane(control_plane &control_plane) : _control_plane(control_pl
 void data_plane::handle_uplink(uint32_t dp_teid, Packet &&packet) {
     auto bearer = _control_plane.find_bearer_by_dp_teid(dp_teid);
     if (!bearer) return;
+    if (!bearer->check_uplink(packet.size())) {
+        std::cout << "Uplink packet dropped (TEID: " 
+                    << dp_teid << ")" << std::endl;
+        return;
+    }
     auto pdn = bearer->get_pdn_connection();
     if (!pdn) return;
     forward_packet_to_apn(pdn->get_apn_gw(), std::move(packet));
@@ -62,14 +67,14 @@ void data_plane::handle_uplink(uint32_t dp_teid, Packet &&packet) {
 
 void data_plane::handle_downlink(const boost::asio::ip::address_v4 &ue_ip, Packet &&packet) {
     auto pdn = _control_plane.find_pdn_by_ip_address(ue_ip);
-    if (!pdn) {
-        std::cerr << "PDN не найден!" << std::endl;
-        return;
-    }
+    if (!pdn) return;
 
     auto bearer = pdn->get_default_bearer();
-    if (!bearer) {
-        std::cerr << "Default bearer не найден!" << std::endl;
+    if (!bearer) return;
+
+    if (!bearer->check_downlink(packet.size())) {
+        std::cout << "Downlink packet dropped (ue_ip: " 
+                    << ue_ip << ")" << std::endl;
         return;
     }
 

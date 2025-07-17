@@ -1,7 +1,8 @@
 #include "pdn_connection.h"
 
 void pdn_connection::add_bearer(std::shared_ptr<bearer> bearer) {
-    _bearers[bearer->get_dp_teid()] = std::move(bearer);
+    if(bearer)
+        _bearers[bearer->get_dp_teid()] = std::move(bearer);
 }
 
 void pdn_connection::remove_bearer(uint32_t dp_teid) {
@@ -19,7 +20,7 @@ std::shared_ptr<pdn_connection> pdn_connection::create(uint32_t cp_teid, boost::
     return std::shared_ptr<pdn_connection>(new pdn_connection(cp_teid, apn_gw, ue_ip_addr));
 }
 
-void pdn_connection::set_sgw_cp_teid(uint32_t sgw_cp_teid) { _sgw_cp_teid = sgw_cp_teid; }
+void pdn_connection::set_sgw_cp_teid(uint32_t sgw_cp_teid) { _sgw_cp_teid = std::move(sgw_cp_teid); }
 
 std::shared_ptr<bearer> pdn_connection::get_default_bearer() const { return _default_bearer; }
 
@@ -27,7 +28,7 @@ void pdn_connection::set_default_bearer(std::shared_ptr<bearer> bearer) { _defau
 
 boost::asio::ip::address_v4 pdn_connection::get_sgw_address() const { return _sgw_address; }
 
-void pdn_connection::set_sgw_addr(boost::asio::ip::address_v4 sgw_addr) { _sgw_address = sgw_addr; }
+void pdn_connection::set_sgw_addr(boost::asio::ip::address_v4 sgw_addr) { _sgw_address = std::move(sgw_addr); }
 
 uint32_t pdn_connection::get_cp_teid() const { return _cp_teid; }
 

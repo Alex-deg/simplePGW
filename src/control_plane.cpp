@@ -26,7 +26,6 @@ std::shared_ptr<pdn_connection> control_plane::create_pdn_connection(
     }
 
     // Генерация UE IP адреса
-    // ???
     static uint32_t next_ip = 0xC0A80001; // 192.168.0.1
     boost::asio::ip::address_v4 ue_ip(boost::asio::ip::address_v4::bytes_type{
         static_cast<uint8_t>((next_ip >> 24) & 0xFF),
@@ -53,6 +52,10 @@ void control_plane::delete_pdn_connection(uint32_t cp_teid) {
     auto default_bearer = pdn->get_default_bearer();
     if (default_bearer) {
         delete_bearer(default_bearer->get_dp_teid());
+    }
+
+    for(auto &x : pdn->_bearers){
+        delete_bearer(x.first);
     }
 
     _pdns_by_ue_ip_addr.erase(pdn->get_ue_ip_addr());

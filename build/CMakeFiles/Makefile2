@@ -85,12 +85,12 @@ clean: CMakeFiles/pgw_tests.dir/clean
 CMakeFiles/pgw_lib.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_lib.dir/build.make CMakeFiles/pgw_lib.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_lib.dir/build.make CMakeFiles/pgw_lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/alex/Протей/ДЗ №7 PGW/PGW/build/CMakeFiles" --progress-num=1,2,3,4,5 "Built target pgw_lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/alex/Протей/ДЗ №7 PGW/PGW/build/CMakeFiles" --progress-num=1,2,3,4,5,6 "Built target pgw_lib"
 .PHONY : CMakeFiles/pgw_lib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pgw_lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/alex/Протей/ДЗ №7 PGW/PGW/build/CMakeFiles" 5
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/alex/Протей/ДЗ №7 PGW/PGW/build/CMakeFiles" 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/pgw_lib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/alex/Протей/ДЗ №7 PGW/PGW/build/CMakeFiles" 0
 .PHONY : CMakeFiles/pgw_lib.dir/rule
@@ -111,12 +111,12 @@ CMakeFiles/pgw_lib.dir/clean:
 CMakeFiles/pgw_main.dir/all: CMakeFiles/pgw_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_main.dir/build.make CMakeFiles/pgw_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_main.dir/build.make CMakeFiles/pgw_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/alex/Протей/ДЗ №7 PGW/PGW/build/CMakeFiles" --progress-num=6,7 "Built target pgw_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/alex/Протей/ДЗ №7 PGW/PGW/build/CMakeFiles" --progress-num=7,8 "Built target pgw_main"
 .PHONY : CMakeFiles/pgw_main.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pgw_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/alex/Протей/ДЗ №7 PGW/PGW/build/CMakeFiles" 7
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/alex/Протей/ДЗ №7 PGW/PGW/build/CMakeFiles" 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/pgw_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/alex/Протей/ДЗ №7 PGW/PGW/build/CMakeFiles" 0
 .PHONY : CMakeFiles/pgw_main.dir/rule
@@ -137,12 +137,12 @@ CMakeFiles/pgw_main.dir/clean:
 CMakeFiles/pgw_tests.dir/all: CMakeFiles/pgw_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_tests.dir/build.make CMakeFiles/pgw_tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_tests.dir/build.make CMakeFiles/pgw_tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/alex/Протей/ДЗ №7 PGW/PGW/build/CMakeFiles" --progress-num=8,9,10,11,12,13 "Built target pgw_tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/home/alex/Протей/ДЗ №7 PGW/PGW/build/CMakeFiles" --progress-num=9,10,11,12,13,14,15 "Built target pgw_tests"
 .PHONY : CMakeFiles/pgw_tests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pgw_tests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/alex/Протей/ДЗ №7 PGW/PGW/build/CMakeFiles" 11
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/alex/Протей/ДЗ №7 PGW/PGW/build/CMakeFiles" 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/pgw_tests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/alex/Протей/ДЗ №7 PGW/PGW/build/CMakeFiles" 0
 .PHONY : CMakeFiles/pgw_tests.dir/rule

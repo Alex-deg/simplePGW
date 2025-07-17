@@ -297,6 +297,33 @@ src/pdn_connection.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_tests.dir/build.make CMakeFiles/pgw_tests.dir/src/pdn_connection.cpp.s
 .PHONY : src/pdn_connection.cpp.s
 
+src/rate_limiter.o: src/rate_limiter.cpp.o
+.PHONY : src/rate_limiter.o
+
+# target to build an object file
+src/rate_limiter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_lib.dir/build.make CMakeFiles/pgw_lib.dir/src/rate_limiter.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_tests.dir/build.make CMakeFiles/pgw_tests.dir/src/rate_limiter.cpp.o
+.PHONY : src/rate_limiter.cpp.o
+
+src/rate_limiter.i: src/rate_limiter.cpp.i
+.PHONY : src/rate_limiter.i
+
+# target to preprocess a source file
+src/rate_limiter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_lib.dir/build.make CMakeFiles/pgw_lib.dir/src/rate_limiter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_tests.dir/build.make CMakeFiles/pgw_tests.dir/src/rate_limiter.cpp.i
+.PHONY : src/rate_limiter.cpp.i
+
+src/rate_limiter.s: src/rate_limiter.cpp.s
+.PHONY : src/rate_limiter.s
+
+# target to generate assembly for a file
+src/rate_limiter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_lib.dir/build.make CMakeFiles/pgw_lib.dir/src/rate_limiter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pgw_tests.dir/build.make CMakeFiles/pgw_tests.dir/src/rate_limiter.cpp.s
+.PHONY : src/rate_limiter.cpp.s
+
 test/data_plane_test.o: test/data_plane_test.cpp.o
 .PHONY : test/data_plane_test.o
 
@@ -348,6 +375,9 @@ help:
 	@echo "... src/pdn_connection.o"
 	@echo "... src/pdn_connection.i"
 	@echo "... src/pdn_connection.s"
+	@echo "... src/rate_limiter.o"
+	@echo "... src/rate_limiter.i"
+	@echo "... src/rate_limiter.s"
 	@echo "... test/data_plane_test.o"
 	@echo "... test/data_plane_test.i"
 	@echo "... test/data_plane_test.s"

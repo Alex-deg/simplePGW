@@ -342,4 +342,7 @@ CMakeFiles/pgw_tests.dir/src/pdn_connection.cpp.o: \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
  /usr/include/boost/asio/detail/impl/socket_ops.ipp \
- /usr/include/boost/asio/detail/assert.hpp /usr/include/boost/assert.hpp
+ /usr/include/boost/asio/detail/assert.hpp /usr/include/boost/assert.hpp \
+ /home/alex/Протей/ДЗ\ №7\ PGW/PGW/src/rate_limiter.h \
+ /usr/include/c++/13/chrono /usr/include/c++/13/iostream \
+ /usr/include/c++/13/istream /usr/include/c++/13/bits/istream.tcc
