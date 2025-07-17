@@ -1,7 +1,7 @@
 #include "rate_limiter.h"
 
 RateLimiter::RateLimiter() {
-    _rate_bps = 10000000; 
+    _rate_bps = 10000000; // 10 Мбит/с
     _tokens = 0; 
     _last_update = std::chrono::steady_clock::now();
 }

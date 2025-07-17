@@ -12,7 +12,7 @@ public:
 
     void set_rate(uint32_t rate_bps);
 private:
-    uint32_t _rate_bps;   // Бит в секунду
-    uint32_t _tokens;     // Доступные биты
+    uint32_t _rate_bps; 
+    uint32_t _tokens;  
     std::chrono::steady_clock::time_point _last_update;
 };

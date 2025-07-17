@@ -34,7 +34,7 @@ std::shared_ptr<pdn_connection> control_plane::create_pdn_connection(
         static_cast<uint8_t>(next_ip & 0xFF)});
     next_ip++;
 
-    auto pdn = pdn_connection::create(sgw_cp_teid /*???*/, apn_it->second, ue_ip);
+    auto pdn = pdn_connection::create(sgw_cp_teid, apn_it->second, ue_ip);
     pdn->set_sgw_addr(sgw_addr);
     pdn->set_sgw_cp_teid(sgw_cp_teid);
 
